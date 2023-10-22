@@ -18,6 +18,8 @@
 .project-info button {
   width: fit-content;
   height: fit-content;
+  background-color: darkblue;
+  color: white;
   padding: 7px;
 }
 

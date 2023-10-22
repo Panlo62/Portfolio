@@ -14,7 +14,7 @@ export default function Achievements() {
   };
 
   return (
-    <div className="works" id="works">
+    <div className="achievements" id="achievements">
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}

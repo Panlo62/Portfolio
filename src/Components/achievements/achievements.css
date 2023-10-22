@@ -1,4 +1,4 @@
-.works {
+.achievements {
   width: 100vw;
   height: calc(100vh - 80px);
   background-color: crimson;
@@ -8,7 +8,7 @@
   position: relative;
 }
 
-.works .arrow {
+.achievements .arrow {
   height: 50px;
   position: absolute;
   cursor: pointer;
@@ -18,16 +18,16 @@
   }
 }
 
-.works .arrow.left {
+.achievements .arrow.left {
   left: 100px;
   transform: rotateY(180deg);
 }
 
-.works .arrow.right {
+.achievements .arrow.right {
   right: 100px;
 }
 
-.works .slider {
+.achievements .slider {
   height: 350px;
   display: flex;
   position: absolute;
@@ -41,14 +41,14 @@
   }
 }
 
-.works .slider .container {
+.achievements .slider .container {
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.works .slider .container .item {
+.achievements .slider .container .item {
   width: 700px;
   height: 100%;
   background-color: white;
@@ -64,7 +64,7 @@
   }
 }
 
-.works .slider .container .item .left {
+.achievements .slider .container .item .left {
   flex: 4;
   height: 80%;
   display: flex;
@@ -72,7 +72,7 @@
   justify-content: center;
 }
 
-.works .slider .container .item .left .leftContainer {
+.achievements .slider .container .item .left .leftContainer {
   width: 90%;
   height: 70%;
   display: flex;
@@ -80,7 +80,7 @@
   justify-content: space-evenly;
 }
 
-.works .slider .container .item .left .leftContainer h2 {
+.achievements .slider .container .item .left .leftContainer h2 {
   font-size: 20px;
 
   @media (max-width: 768px) {
@@ -88,7 +88,7 @@
   }
 }
 
-.works .slider .container .item .left .leftContainer p {
+.achievements .slider .container .item .left .leftContainer p {
   font-size: 13px;
 
   @media (max-width: 768px) {
@@ -96,7 +96,7 @@
   }
 }
 
-.works .slider .container .item .right {
+.achievements .slider .container .item .right {
   flex: 8;
   height: 100%;
   display: flex;
@@ -105,7 +105,7 @@
   overflow: hidden;
 }
 
-.works .slider .container .item .right img {
+.achievements .slider .container .item .right img {
   width: 400px;
   transform: rotate(-10deg);
 }

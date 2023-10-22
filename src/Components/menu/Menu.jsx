@@ -6,7 +6,6 @@ export default function Menu({ menuOpen, setMenuOpen }) {
     "Home",
     "Intro",
     "Portfolio",
-    "Works",
     "Achievements",
     "Contact",
   ];
