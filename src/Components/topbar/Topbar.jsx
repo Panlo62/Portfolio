@@ -22,7 +22,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           <div className="itemContainer">
             <AiFillCopy className="icon" />
             <span>
-              <a href="/assets/Resume_Pankaj_Tyagi.pdf" target="_blank">
+              <a href="./assets/Resume_Pankaj_Tyagi.pdf" target="_blank">
                 My Resume
               </a>
             </span>

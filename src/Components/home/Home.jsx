@@ -6,7 +6,7 @@ export default function Home() {
     <div className="home" id="home">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/man.png" alt="" />
+          <img src="./assets/man.png" alt="" />
         </div>
       </div>
       <div className="right">
@@ -30,7 +30,7 @@ export default function Home() {
           </h3>
         </div>
         <a href="#portfolio">
-          <img src="assets/down.png" alt="" />
+          <img src="./assets/down.png" alt="" />
         </a>
       </div>
     </div>

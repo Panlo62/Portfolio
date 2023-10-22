@@ -37,8 +37,8 @@ export default function Intro() {
       </div>
       <div className="right">
         <div className="container">
-          <a href="/assets/Resume_Pankaj_Tyagi.pdf" target="_blank">
-            <img src="/assets/resume_img.png" alt="My resume" />
+          <a href="./assets/Resume_Pankaj_Tyagi.pdf" target="_blank">
+            <img src="./assets/resume_img.png" alt="My resume" />
           </a>
           <h2>Resume</h2>
         </div>
