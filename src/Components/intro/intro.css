@@ -1,0 +1,76 @@
+.intro {
+  width: 100vw;
+  height: calc(100vh - 80px);
+  background-color: white;
+  display: flex;
+  gap: 10px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.intro .left {
+  padding: 40px;
+  flex: 0.45;
+  z-index: 2;
+}
+
+.intro .right {
+  padding: 40px;
+  flex: 0.5;
+  background: crimson;
+  color: white;
+  transform: skewX(-10deg);
+  width: 50%;
+  position: absolute;
+  right: -6vw;
+  height: calc(100vh - 160px);
+}
+
+.intro .left p {
+  font-size: 18px;
+  text-align: justify;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.intro .left h1 {
+  font-size: 80px;
+  margin: 5px 0 20px 0;
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
+}
+
+.intro .right .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: skewX(10deg);
+  height: 100%;
+  width: 100%;
+}
+
+.intro .right .container h2 {
+  margin: 25px 0;
+  font-size: 40px;
+}
+
+.intro .right .container a img {
+  height: 99%;
+  border: solid 1px black;
+}
+
+.intro .right .container a {
+  height: 80%;
+  flex: 1;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
