@@ -17,7 +17,9 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           </div>
           <div className="itemContainer">
             <MdEmail className="icon" />
-            <span>pankaj6255dav@gmail.com</span>
+            <span><a href="mailto: pankaj6255dav@gmail.com">
+              pankaj6255dav@gmail.com
+            </a></span>
           </div>
           <div className="itemContainer">
             <AiFillCopy className="icon" />
