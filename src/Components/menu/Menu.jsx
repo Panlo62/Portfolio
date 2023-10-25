@@ -2,13 +2,7 @@ import "./menu.css";
 
 export default function Menu({ menuOpen, setMenuOpen }) {
   const setMenuOpenFalse = () => setMenuOpen(false);
-  const items = [
-    "Home",
-    "Intro",
-    "Portfolio",
-    "Achievements",
-    "Contact",
-  ];
+  const items = ["Home", "Intro", "Portfolio", "Achievements", "Contact"];
 
   return (
     <div className={"menu " + (menuOpen && "active")}>

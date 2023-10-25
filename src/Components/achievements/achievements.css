@@ -6,6 +6,10 @@
   align-items: center;
   justify-content: center;
   position: relative;
+
+  @media (max-width: 768px) {
+    height: calc(100vh - 50px);
+  }
 }
 
 .achievements .arrow {
