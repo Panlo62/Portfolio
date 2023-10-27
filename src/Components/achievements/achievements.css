@@ -12,6 +12,19 @@
   }
 }
 
+.achievements h1 {
+  position: absolute;
+  top: 0;
+  font-size: 70px;
+  margin: 50px;
+  color: white;
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+    margin: 30px;
+  }
+}
+
 .achievements .arrow {
   height: 50px;
   position: absolute;
@@ -39,7 +52,7 @@
   transition: all 1s ease-out;
 
   @media (max-width: 768px) {
-    height: 100vh;
+    height: calc(100vh - 50px);
     flex-direction: column;
     justify-content: center;
   }

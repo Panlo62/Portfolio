@@ -3,9 +3,8 @@
   height: 100vh;
   background-color: #15023a;
   position: fixed;
-  top: 0;
   right: -60vw;
-  z-index: 5;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +12,7 @@
   transition: all 1s ease;
 
   @media (max-width: 768px) {
-    width: 60vw;
+    width: 45vw;
   }
 }
 

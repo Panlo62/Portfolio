@@ -1,4 +1,4 @@
-.portfolio {
+.projects {
   width: 100vw;
   height: calc(100vh - 80px);
   background-color: white;
@@ -11,16 +11,16 @@
   }
 }
 
-.portfolio h1 {
+.projects h1 {
   font-size: 70px;
   margin: 50px;
 
   @media (max-width: 768px) {
-    font-size: 20px;
+    font-size: 40px;
   }
 }
 
-.portfolio .container {
+.projects .container {
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -32,7 +32,7 @@
   }
 }
 
-.portfolio .container .left {
+.projects .container .left {
   display: flex;
   flex: 1;
   align-items: center;
@@ -44,7 +44,7 @@
   }
 }
 
-.portfolio .container .left .item {
+.projects .container .left .item {
   width: 220px;
   height: 150px;
   border-radius: 20px;
@@ -64,23 +64,23 @@
   }
 }
 
-.portfolio .container .left .item h3 {
+.projects .container .left .item h3 {
   position: absolute;
   font-size: 20px;
 }
 
-.portfolio .container .left .item img {
+.projects .container .left .item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 1;
 }
 
-.portfolio .container .left .item:hover {
+.projects .container .left .item:hover {
   background-color: #15023a;
 }
 
-.portfolio .container .left .item:hover img {
+.projects .container .left .item:hover img {
   opacity: 0.2;
   z-index: 0;
 }
