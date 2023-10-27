@@ -7,7 +7,7 @@ export default function Portfolio() {
   const [curr, setCurr] = useState();
 
   return (
-    <div className="portfolio" id="portfolio">
+    <div className="projects" id="projects">
       <h1>Portfolio</h1>
       <div className="container">
         <div className="left">
