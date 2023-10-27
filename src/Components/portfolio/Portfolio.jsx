@@ -8,7 +8,7 @@ export default function Portfolio() {
 
   return (
     <div className="projects" id="projects">
-      <h1>Portfolio</h1>
+      <h1>Projects</h1>
       <div className="container">
         <div className="left">
           {portfolioWorks.map((d) => (
