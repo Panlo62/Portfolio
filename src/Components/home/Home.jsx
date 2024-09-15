@@ -6,7 +6,7 @@ export default function Home() {
     <div className="home" id="home">
       <div className="left">
         <div className="imgContainer">
-          <img src="./assets/man.png" alt="" />
+          <img src="./assets/myself.png" alt="" />
         </div>
       </div>
       <div className="right">
@@ -18,9 +18,8 @@ export default function Home() {
               options={{
                 strings: [
                   "Web Developer",
-                  "MERN Stack Developer",
-                  "Full Stack Developer",
                   "React Developer",
+                  "Coding entusiast",
                 ],
                 autoStart: true,
                 delay: 40,
