@@ -36,6 +36,7 @@
     align-items: flex-end;
     height: 40vh;
     width: 40vh;
+    justify-content: center;
   }
 }
 
@@ -44,7 +45,6 @@
 
   @media (max-width: 768px) {
     height: 100%;
-    align: center;
   }
 }
 
