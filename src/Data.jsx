@@ -47,19 +47,19 @@ export const certificates = [
   {
     id: "1",
     title: "Web Design",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-    img: "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+    desc: "Won first position in website making competition in 2022 in annual Tech Fest.",
+    img: "./assets/projects/coding.png",
   },
   {
     id: "2",
-    title: "Mobile Application",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    img: "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+    title: "Coding",
+    desc: "Won first position in coding competition in 2022 in annual Tech Fest.",
+    img: "./assets/projects/website.png",
   },
   {
     id: "3",
-    title: "Branding",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+    title: "Quiz",
+    desc: "Won first position in 2023 in quiz competition in annual Tech Fest.",
+    img: "./assets/projects/quiz.png",
   },
 ];
