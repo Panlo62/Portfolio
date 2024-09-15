@@ -1,23 +1,41 @@
 import "./portfolio.css";
 import { portfolioWorks } from "../../Data";
+import { useState, useEffect, useRef } from "react";
 import ProjectInfo from "../projectInfo/ProjectInfo";
-import { useState, useRef, useEffect } from "react";
 
 export default function Portfolio() {
   const [curr, setCurr] = useState();
-  const projectInfoRef = useRef(null); // Ref for the ProjectInfo component
+  const [isMobile, setIsMobile] = useState(false);
+  const projectInfoRef = useRef(null);
 
-  // Effect to handle clicks outside of ProjectInfo
+  // Check if the device is mobile
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Check if screen width is 768px or less
+    };
+
+    // Run on initial render
+    handleResize();
+
+    // Add event listener to handle window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  // Close the ProjectInfo if clicking outside
   useEffect(() => {
     function handleClickOutside(event) {
-      // Check if the click is outside of the ProjectInfo component
       if (projectInfoRef.current && !projectInfoRef.current.contains(event.target)) {
-        setCurr(undefined); // Close ProjectInfo by resetting curr
+        setCurr(undefined); // Close the ProjectInfo by resetting curr
       }
     }
 
-    // Add event listener if a project is selected (curr is not undefined)
-    if (curr) {
+    // Only add the event listener when a project is open and we're on desktop/tablet
+    if (curr && !isMobile) {
       document.addEventListener("mousedown", handleClickOutside);
     }
 
@@ -25,7 +43,7 @@ export default function Portfolio() {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [curr]);
+  }, [curr, isMobile]);
 
   return (
     <div className="projects" id="projects">
@@ -37,7 +55,13 @@ export default function Portfolio() {
               className="item"
               key={d.title}
               onClick={() => {
-                setCurr(d); // Set the current project to show ProjectInfo
+                if (isMobile) {
+                  // On mobile, open the project link directly
+                  window.open(d.link, "_blank"); // Open link in a new tab
+                } else {
+                  // On desktop/tablet, show ProjectInfo
+                  setCurr(d);
+                }
               }}
             >
               <img src={d.img} alt={d.title} />
@@ -46,12 +70,12 @@ export default function Portfolio() {
           ))}
         </div>
         <div className="right">
-          {curr && (
+          {!isMobile && curr && (
             <div ref={projectInfoRef}>
               <ProjectInfo
                 curr={curr}
                 onClick={() => {
-                  setCurr(undefined); // Close ProjectInfo by resetting curr
+                  setCurr(undefined); // Close the ProjectInfo
                 }}
               />
             </div>
