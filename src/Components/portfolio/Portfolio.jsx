@@ -56,8 +56,11 @@ export default function Portfolio() {
               key={d.title}
               onClick={() => {
                 if (isMobile) {
-                  // On mobile, open the project link directly
-                  window.open(d.link, "_blank"); // Open link in a new tab
+                  if (!d.link.startsWith("Dummy Link - ")) {
+                    window.open(d.link, "_blank"); // Open the link in a new tab
+                  } else {
+                    alert("Work under progress. This is a dummy link and cannot be opened.");
+                  }
                 } else {
                   // On desktop/tablet, show ProjectInfo
                   setCurr(d);
