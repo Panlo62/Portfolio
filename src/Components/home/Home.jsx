@@ -19,7 +19,7 @@ export default function Home() {
                 strings: [
                   "Web Developer",
                   "React Developer",
-                  "Coding entusiast",
+                  "Coding Enthusiast",
                 ],
                 autoStart: true,
                 delay: 40,
